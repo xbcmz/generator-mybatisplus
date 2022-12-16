@@ -15,23 +15,23 @@ import java.util.List;
 
 /**
  * 自动生成mybatisplus的相关代码
- * @author lewis
+ * @author mr
  */
 public class GeneratorCodeMySQL {
 
     public static void main(String[] args) {
         //1、地址和端口 [114.114.114.114:8888]
-        String ipAndPort = "lewis-mysql:3306";
+        String ipAndPort = "localhost:3306";
         //2、数据库名名 [databaseName]
-        String databaseName = "lewis-you";
+        String databaseName = "fresh";
         //3、用户名 [userName]
         String userName = "root";
         //4、用户密码 [password]
-        String password = "BnHLRt9kI3gN";
-        //5、父包路径 [com.lewis.parent]
-        String parentPath = "com.lewis";
+        String password = "123456";
+        //5、父包路径 [com.mr.parent]
+        String parentPath = "com.mr";
         //6、表名，多个英文逗号分割 不填默认生成所有表
-        String tablesSelected = "you_user";
+        String tablesSelected = "sys_tag";
         //7、模块名，不填则不设置模块名
         String moduleName = "";
         //8、生成表时去掉前缀
@@ -64,7 +64,7 @@ public class GeneratorCodeMySQL {
                 //是否覆盖已有文件
                 .setFileOverride(true)
                 //开启Swagger2模式- 实体属性 Swagger2 注解
-                .setSwagger2(true)
+                .setSwagger2(false)
                 //不需要ActiveRecord特性的请改为false
                 .setActiveRecord(false)
                 //XML 二级缓存
@@ -84,7 +84,7 @@ public class GeneratorCodeMySQL {
                 //生成基本的SQL片段
                 .setBaseColumnList(true)
                 //生成作者注释
-                .setAuthor("lewis");
+                .setAuthor("mr");
 
         mpg.setGlobalConfig(globalConfig);
 
